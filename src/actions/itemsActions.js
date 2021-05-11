@@ -7,7 +7,6 @@ export const getItems = () => async dispatch => {
         const res = await fetch('https://run.mocky.io/v3/aea5d98a-654d-4423-bd99-6fbb90843730')
         const data = await res.json()
         const items = await data.data
-        console.log('yup',items)
 
         dispatch({
             type: GET_ITEMS,

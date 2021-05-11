@@ -36,8 +36,7 @@ export default (state = initialState, action) => {
                 loading: true
             }
 
-        case ITEMS_ERROR : 
-            console.log('Error : ',action.payload)
+        case ITEMS_ERROR :
             return {
                 ...state,
                 error: action.payload

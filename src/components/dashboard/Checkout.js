@@ -9,10 +9,6 @@ const Checkout = ({item: {cartItems}}) => {
     cartItems.map(x => (
         value = value + x.price * x.quantity
     ))
-
-    console.log('amount',value)
-
-    console.log(cartItems)
     return (
         <div>
             <Container  maxWidth="md">
